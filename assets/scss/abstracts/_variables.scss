@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Scss variables.
+// -----------------------------------------------------------------------------
+
+$primary: #502eff;
+$secondary: #3c24b3;
+$white: #faf7ff;
+
+$w-100: 100%;
+
+$z-index: (
+  'postbox': 10,
+  'curb': 1,
+  'pavement': 0,
+  'pothole': -1,
+);

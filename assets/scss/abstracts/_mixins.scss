@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Scss mixins.
+// -----------------------------------------------------------------------------
+
+@mixin size($width: null, $height: null) {
+  width: $width;
+  height: $height;
+}
+
+// MEDIA Querries
+
+@mixin for-xs {
+  @media (max-width: 567px) {
+    @content;
+  }
+}
+@mixin for-sm {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin for-md {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin for-lg-up {
+  @media (max-width: 996px) {
+    @content;
+  }
+}
+
+@mixin for-xl {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

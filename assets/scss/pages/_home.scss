@@ -1,0 +1,81 @@
+.bg-services {
+  background-image: url('/assets/images/bg-services.svg');
+  background-size: $w-100;
+  background-color: $primary;
+  z-index: map-get($z-index, 'pothole');
+}
+
+.bg-achievement {
+  background-size: $w-100;
+  background-color: $white;
+  z-index: map-get($z-index, 'pothole');
+}
+
+.text-header {
+  font-size: 100px;
+  transform: translate(-150px, 250px) rotate(-90deg);
+}
+
+.text-team {
+  font-size: 250px;
+  transform: translate(0px, 100px);
+}
+
+.img-header {
+  @include size(40%);
+  margin: 75px 70px 0 0;
+  z-index: map-get($z-index, 'pothole');
+
+}
+
+.dot-position {
+  transform: translate(400px, -100px);
+}
+
+.dot-position-2 {
+  transform: translate(400px, 150px);
+}
+
+.achievement {
+  transform: translateY(-50px);
+}
+
+.hr {
+  border: 2px solid #4c83ff;
+}
+
+.form-contact {
+  padding: 12px;
+  padding-left: 16px;
+  border: 2px solid $primary;
+  transition: 300ms;
+  @include size(300px);
+  border-radius: 50px;
+
+  :focus {
+    outline: none;
+    box-shadow: 5px 3px 10px $primary;
+  }
+}
+
+@include for-sm {
+  .img-header {
+    @include size(180px);
+    transform: translate(0px, 100px);
+  }
+}
+
+@include for-md {
+  .img-header {
+    @include size(300px);
+    transform: translate(-50px, 100px);
+  }
+
+  .max-width-1x,
+  .max-width-2x,
+  .max-width-3x,
+  .max-width-5x,
+  .max-width-5x {
+    max-width: 100%;
+  }
+}

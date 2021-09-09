@@ -1,0 +1,27 @@
+$sizes: 2, 3, 4, 5;
+
+@each $size in $sizes {
+  .width-#{$size + 'x'} {
+    width: $size * 100px;
+  }
+}
+
+$max-sizes: 1, 2, 3, 4, 5;
+
+@each $max-size in $max-sizes {
+  .max-width-#{$max-size + 'x'} {
+    max-width: $max-size * 100px +100px;
+  }
+}
+
+$count: 1;
+$loop: 100;
+
+@while $count <= 5 {
+  .bold-#{$count} {
+    font-weight: (400 + $loop);
+  }
+
+  $count: $count + 1;
+  $loop: $loop + 100;
+}
